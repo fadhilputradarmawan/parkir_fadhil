@@ -1,0 +1,26 @@
+CREATE DATABASE db_fadhil;
+
+CREATE TABLE parkir(id_parkir int(20) PRIMARY KEY,
+biaya_parkir varchar (25),
+waktu_parkir time,
+tempat_parkir varchar(22));
+
+CREATE TABLE kendaraan(plat_nomor varchar (19) PRIMARY KEY,
+id_parkir int(20) ,
+jenis_kendaraan varchar(25),
+model_kendaraan varchar(50)
+);
+
+INSERT INTO kendaraan VALUES("BD 2425 WH",21,"motor","Vario"),
+("B 1658 JR",11,"motor","Beat"),
+("P 4716 ZE",13,"mobil","supra mk4"),
+("Z 2396 DR",18,"mobil","mustang"),
+("H 1899 WH",15,"motor","mio");
+
+INSERT INTO parkir VALUES(21,"Rp5.000",010042,"D-15 lantai 2"),
+(12,"Rp10.000",015550,"C-21 lantai 1"),
+(13,"Rp21.000",020953,"A-12 lantai 3"),
+(18,"Rp14.000",012011,"B-8 lantai 2"),
+(15,"Rp10.000",011131,"A-2 lantai 2")
+
+
